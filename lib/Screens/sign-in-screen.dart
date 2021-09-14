@@ -1,7 +1,7 @@
 import 'package:eatwell_app/resource/assets.dart';
 import 'package:eatwell_app/resource/colors.dart';
 import 'package:flutter/material.dart';
-import 'package:phone_number/phone_number.dart';
+import 'package:intl_phone_number_input/intl_phone_number_input.dart';
 
 class SignIn extends StatefulWidget {
   @override
@@ -258,32 +258,20 @@ class _SignInState extends State<SignIn> {
                                               Radius.circular(7),
                                             ),
                                           ),
-                                          child: TextFormField(
-                                            obscureText: true,
-                                            controller: PasswordController,
-                                            onChanged: (value) {
-                                              setState(() {});
-                                            },
-                                            decoration: InputDecoration(
-                                              suffixIcon: PasswordController.text.length > 0
-                                                  ? IconButton(
-                                                onPressed: () {
-                                                  PasswordController.clear();
-                                                  setState(() {});
-                                                },
-                                                icon: Icon(Icons.clear),
-                                              )
-                                                  : null,
-                                              border: InputBorder.none,
-                                              enabledBorder: InputBorder.none,
-                                              hintText: "+966 9200 27778",
-                                              contentPadding:
-                                              EdgeInsets.fromLTRB(18, 21, 0, 15.7),
-                                              hintStyle: TextStyle(
-                                                color: Col.grey,
-                                                fontFamily: Assets.Product_Sans_Regular,
-                                                fontSize: 14,
-                                                letterSpacing: 3.0,
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(left: 20),
+                                            child: InternationalPhoneNumberInput(
+                                              selectorTextStyle: TextStyle(color: Colors.black),
+                                              inputDecoration: InputDecoration(
+                                                border: InputBorder.none,
+                                                enabledBorder: InputBorder.none,
+                                                hintText: "9200 27778",
+                                                hintStyle: TextStyle(
+                                                  color: Col.grey,
+                                                  fontFamily: Assets.Product_Sans_Regular,
+                                                  fontSize: 16,
+                                                  letterSpacing: 3.0,
+                                                ),
                                               ),
                                             ),
                                           ),

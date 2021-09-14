@@ -108,6 +108,10 @@ class _VerificationState extends State<Verification> {
                                                     FilteringTextInputFormatter.digitsOnly,
                                                     LengthLimitingTextInputFormatter(1),
                                                   ],
+                                                    style: TextStyle(
+                                                      fontSize: 26.7,
+                                                        color: Col.black,
+                                                    ),
                                                   keyboardType: TextInputType.numberWithOptions(decimal: true),
                                                   controller: verificationController1,
                                                   textInputAction: TextInputAction.next,
@@ -119,7 +123,7 @@ class _VerificationState extends State<Verification> {
                                                     enabledBorder: InputBorder.none,
                                                     border: InputBorder.none,
                                                     hintText: "0",
-                                                    
+
                                                     hintStyle: TextStyle(
                                                       color: Col.grey,
                                                       fontFamily: Assets.Product_Sans_Regular,
@@ -142,6 +146,10 @@ class _VerificationState extends State<Verification> {
                                                   ),
                                                 ),
                                                 child: TextFormField(
+                                                  style: TextStyle(
+                                                    fontSize: 26.7,
+                                                    color: Col.black,
+                                                  ),
                                                   inputFormatters: [
                                                     FilteringTextInputFormatter.digitsOnly,
                                                     LengthLimitingTextInputFormatter(1),
@@ -179,6 +187,10 @@ class _VerificationState extends State<Verification> {
                                                   ),
                                                 ),
                                                 child: TextFormField(
+                                                  style: TextStyle(
+                                                    fontSize: 26.7,
+                                                    color: Col.black,
+                                                  ),
                                                   inputFormatters: [
                                                     FilteringTextInputFormatter.digitsOnly,
                                                     LengthLimitingTextInputFormatter(1),
@@ -216,6 +228,10 @@ class _VerificationState extends State<Verification> {
                                                   ),
                                                 ),
                                                 child: TextFormField(
+                                                  style: TextStyle(
+                                                    fontSize: 26.7,
+                                                    color: Col.black,
+                                                  ),
                                                   inputFormatters: [
                                                     FilteringTextInputFormatter.digitsOnly,
                                                     LengthLimitingTextInputFormatter(1),
@@ -306,7 +322,7 @@ class _VerificationState extends State<Verification> {
                   child: Column(
                     children: [
                       SizedBox(
-                        height:80,
+                        height:120,
                       ),
                       Expanded(
                         child: Container(
@@ -369,10 +385,15 @@ class _VerificationState extends State<Verification> {
                                                 ),
                                               ),
                                               child: TextFormField(
-                                                keyboardType: TextInputType.number,
-                                                inputFormatters: <TextInputFormatter>[
+                                                inputFormatters: [
                                                   FilteringTextInputFormatter.digitsOnly,
+                                                  LengthLimitingTextInputFormatter(1),
                                                 ],
+                                                style: TextStyle(
+                                                  fontSize: 26.7,
+                                                  color: Col.black,
+                                                ),
+                                                keyboardType: TextInputType.numberWithOptions(decimal: true),
                                                 controller: verificationController1,
                                                 textInputAction: TextInputAction.next,
                                                 onChanged: (value) {
@@ -383,6 +404,7 @@ class _VerificationState extends State<Verification> {
                                                   enabledBorder: InputBorder.none,
                                                   border: InputBorder.none,
                                                   hintText: "0",
+
                                                   hintStyle: TextStyle(
                                                     color: Col.grey,
                                                     fontFamily: Assets.Product_Sans_Regular,
@@ -405,10 +427,15 @@ class _VerificationState extends State<Verification> {
                                                 ),
                                               ),
                                               child: TextFormField(
-                                                keyboardType: TextInputType.number,
-                                                inputFormatters: <TextInputFormatter>[
-                                                  FilteringTextInputFormatter.digitsOnly
+                                                style: TextStyle(
+                                                  fontSize: 26.7,
+                                                  color: Col.black,
+                                                ),
+                                                inputFormatters: [
+                                                  FilteringTextInputFormatter.digitsOnly,
+                                                  LengthLimitingTextInputFormatter(1),
                                                 ],
+                                                keyboardType: TextInputType.numberWithOptions(decimal: true),
                                                 controller: verificationController2,
                                                 textInputAction: TextInputAction.next,
                                                 onChanged: (value) {
@@ -441,10 +468,15 @@ class _VerificationState extends State<Verification> {
                                                 ),
                                               ),
                                               child: TextFormField(
-                                                keyboardType: TextInputType.number,
-                                                inputFormatters: <TextInputFormatter>[
-                                                  FilteringTextInputFormatter.digitsOnly
+                                                style: TextStyle(
+                                                  fontSize: 26.7,
+                                                  color: Col.black,
+                                                ),
+                                                inputFormatters: [
+                                                  FilteringTextInputFormatter.digitsOnly,
+                                                  LengthLimitingTextInputFormatter(1),
                                                 ],
+                                                keyboardType: TextInputType.numberWithOptions(decimal: true),
                                                 controller: verificationController3,
                                                 textInputAction: TextInputAction.next,
                                                 onChanged: (value) {
@@ -477,11 +509,15 @@ class _VerificationState extends State<Verification> {
                                                 ),
                                               ),
                                               child: TextFormField(
-                                                keyboardType: TextInputType.number,
-                                                maxLength: 1,
-                                                // inputFormatters: <TextInputFormatter>[
-                                                //   FilteringTextInputFormatter.digitsOnly
-                                                // ],
+                                                style: TextStyle(
+                                                  fontSize: 26.7,
+                                                  color: Col.black,
+                                                ),
+                                                inputFormatters: [
+                                                  FilteringTextInputFormatter.digitsOnly,
+                                                  LengthLimitingTextInputFormatter(1),
+                                                ],
+                                                keyboardType: TextInputType.numberWithOptions(decimal: true),
                                                 controller: verificationController4,
                                                 onChanged: (value) {
                                                   setState(() {});
